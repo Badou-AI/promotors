@@ -3,37 +3,37 @@ import Image from "next/image"
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen bg-[#161616] pt-20">
+    <section className="relative min-h-[calc(100vh-80px)] bg-[#161616] pt-20">
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute inset-0 bg-[url('/promotors-bg.png')] bg-cover bg-center opacity-20" />
       </div>
-      <div className="container relative flex flex-col lg:flex-row min-h-[calc(100vh-5rem)] items-center">
-        <div className="max-w-2xl space-y-6 lg:w-1/2">
-          <h1 className="font-chakra-petch text-6xl font-bold leading-tight tracking-tight text-white">
+      <div className="container mx-auto px-4 relative flex flex-col lg:flex-row min-h-[calc(100vh-5rem)] items-center">
+        <div className="max-w-2xl space-y-8 lg:w-1/2">
+          <h1 className="font-chakra-petch text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight text-white">
             AUTO MAINTENANCE
             <br />
             & REPAIR SERVICE
           </h1>
-          <p className="text-lg text-[#EDEDED]">
+          <p className="text-lg leading-[26px] text-[#EDEDED]">
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
             dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
             proident, sunt in culpa qui officia deserunt
           </p>
           <Link
             href="/services"
-            className="inline-block bg-[#D16527] px-8 py-4 text-white hover:bg-[#D16527]/90 transition-colors"
+            className="inline-block bg-[#FD6527] px-8 py-4 text-white hover:bg-[#FD6527]/90 transition-colors"
           >
             GET SERVICE
           </Link>
         </div>
-        <div className="lg:w-1/2 mt-8 lg:mt-0">
+        <div className="lg:w-1/2 mt-12 lg:mt-0">
           <div className="relative aspect-[16/9] w-full">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lux-auto-o4Da4UCpgjITItm6C5Si7jMeY3eaHt.png"
+              src="/hero-car.png"
               alt="Luxury Car"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
-              style={{ objectFit: 'contain', objectPosition: 'center' }}
+              className="object-contain"
               priority
             />
           </div>
