@@ -1,5 +1,6 @@
 import './globals.css'
 import { Mulish, Chakra_Petch } from 'next/font/google'
+import { Template } from '@/components/template'
 
 const mulish = Mulish({ 
   subsets: ['latin'],
@@ -20,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${mulish.variable} ${chakraPetch.variable} font-mulish text-body bg-[#161616] text-[var(--body-text-color)]`}>
-        {children}
+        <Template>{children}</Template>
       </body>
     </html>
   )

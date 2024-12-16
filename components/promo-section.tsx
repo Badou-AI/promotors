@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { Container } from "@/components/ui/container"
 
 interface PromoCardProps {
   title: string
@@ -66,7 +67,7 @@ function PromoCard({
 export function PromoSection() {
   return (
     <section className="py-20 bg-[#161616]">
-      <div className="container">
+      <Container>
         <div className="grid lg:grid-cols-3 gap-8">
           {/* Left column (2/3 width) */}
           <div className="lg:col-span-2 grid grid-rows-[auto,1fr] gap-8">
@@ -104,7 +105,7 @@ export function PromoSection() {
             />
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   )
 }

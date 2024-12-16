@@ -2,11 +2,12 @@ import Link from "next/link"
 import Image from "next/image"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
+import { Container } from "@/components/ui/container"
 
 export function SiteFooter() {
   return (
     <footer className="bg-[#121212] pt-20 pb-4">
-      <div className="container">
+      <Container>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Company Info */}
           <div className="space-y-6">
@@ -97,7 +98,7 @@ export function SiteFooter() {
         <div className="border-t border-[#343434] pt-4 text-center text-[#EDEDED] text-sm">
           Merkulove © Promotors Template All rights reserved Copyrights 2022
         </div>
-      </div>
+      </Container>
     </footer>
   )
 }

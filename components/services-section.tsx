@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight } from 'lucide-react'
+import { Container } from "@/components/ui/container"
 
 interface ServiceCardProps {
   title: string
@@ -81,7 +82,7 @@ export function ServicesSection() {
 
   return (
     <section className="bg-[#161616] py-20">
-      <div className="container">
+      <Container>
         <div className="flex flex-col md:flex-row justify-between items-start mb-16">
           <h2 className="font-chakra-petch text-5xl font-bold text-white mb-6 md:mb-0">
             OUR SERVICES
@@ -98,7 +99,7 @@ export function ServicesSection() {
             <ServiceCard key={index} {...service} />
           ))}
         </div>
-      </div>
+      </Container>
     </section>
   )
 }

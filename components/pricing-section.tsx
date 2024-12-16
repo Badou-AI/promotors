@@ -1,5 +1,6 @@
 import { Check, X } from 'lucide-react'
 import Link from 'next/link'
+import { Container } from '@/components/ui/container'
 
 interface PricingFeature {
   name: string
@@ -24,7 +25,7 @@ export function PricingSection() {
 
   return (
     <section className="bg-[#161616] py-20">
-      <div className="container">
+      <Container>
         <div className="grid lg:grid-cols-[1fr,2fr] gap-16">
           <div className="space-y-6">
             <h2 className="font-chakra-petch text-5xl font-bold text-white">
@@ -113,7 +114,7 @@ export function PricingSection() {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   )
 }

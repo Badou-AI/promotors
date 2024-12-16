@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import { Container } from "@/components/ui/container"
 
 interface ArticleCardProps {
   image: string
@@ -82,7 +83,7 @@ export function PopularArticlesSection() {
 
   return (
     <section className="bg-[#161616] py-20">
-      <div className="container">
+      <Container>
         <h2 className="font-chakra-petch text-5xl font-bold text-white mb-12">
           POPULAR ARTICLES
         </h2>
@@ -91,7 +92,7 @@ export function PopularArticlesSection() {
             <ArticleCard key={index} {...article} />
           ))}
         </div>
-      </div>
+      </Container>
     </section>
   )
 }

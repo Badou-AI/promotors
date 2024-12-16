@@ -1,7 +1,9 @@
+import { Container } from "@/components/ui/container"
+
 export function StatsSection() {
   return (
     <section className="bg-[#121212] py-20">
-      <div className="container">
+      <Container>
         <div className="space-y-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
@@ -33,7 +35,7 @@ export function StatsSection() {
             ))}
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   )
 }

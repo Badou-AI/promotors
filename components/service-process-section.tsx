@@ -1,3 +1,5 @@
+import { Container } from "./ui/container"
+
 export function ServiceProcessSection() {
   const steps = [
     {
@@ -24,7 +26,7 @@ export function ServiceProcessSection() {
 
   return (
     <section className="bg-[#121212] py-20">
-      <div className="container">
+      <Container>
         <div className="grid lg:grid-cols-[1fr,2fr] gap-16">
           <div>
             <h2 className="font-chakra-petch text-5xl font-bold text-white mb-6">
@@ -54,7 +56,7 @@ export function ServiceProcessSection() {
             ))}
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   )
 }

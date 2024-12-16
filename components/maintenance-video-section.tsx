@@ -1,10 +1,11 @@
 import { Play } from 'lucide-react'
 import Image from 'next/image'
+import { Container } from "@/components/ui/container"
 
 export function MaintenanceVideoSection() {
   return (
     <section className="bg-[#161616] py-20">
-      <div className="container">
+      <Container>
         <h2 className="font-chakra-petch text-5xl font-bold text-white mb-12">
           MAINTENANCE & REPAIRS
         </h2>
@@ -26,7 +27,7 @@ export function MaintenanceVideoSection() {
             <Play className="w-8 h-8 text-white" />
           </button>
         </div>
-      </div>
+      </Container>
     </section>
   )
 }

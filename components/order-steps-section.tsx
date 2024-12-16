@@ -1,3 +1,5 @@
+import { Container } from "@/components/ui/container"
+
 interface OrderStepProps {
   number: string
   title: string
@@ -24,7 +26,7 @@ function OrderStep({ number, title, description }: OrderStepProps) {
 export function OrderStepsSection() {
   return (
     <section className="py-20 bg-[#121212]">
-      <div className="container">
+      <Container>
         <div className="grid lg:grid-cols-[1fr,2fr] gap-16">
           <div>
             <h2 className="font-chakra-petch text-5xl font-bold text-white mb-6">
@@ -60,7 +62,7 @@ export function OrderStepsSection() {
             />
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   )
 }

@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import { Container } from "@/components/ui/container"
 
 interface CleaningServiceProps {
   title: string
@@ -116,15 +117,17 @@ export function CarCleaningSection() {
 
   return (
     <section className="bg-[#161616] py-20">
-      <div className="container space-y-20">
-        {services.map((service, index) => (
-          <CleaningService
-            key={index}
-            {...service}
-            reverse={index === 1}
-          />
-        ))}
-      </div>
+      <Container>
+        <div className="space-y-20">
+          {services.map((service, index) => (
+            <CleaningService
+              key={index}
+              {...service}
+              reverse={index === 1}
+            />
+          ))}
+        </div>
+      </Container>
     </section>
   )
 }
