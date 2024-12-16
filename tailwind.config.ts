@@ -1,18 +1,37 @@
-import type { Config } from "tailwindcss";
+import type { Config } from "tailwindcss"
 
-export default {
+const config = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    './pages/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
+    './src/**/*.{ts,tsx}',
   ],
   theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
     extend: {
+      fontFamily: {
+        mulish: ['var(--font-mulish)'],
+        'chakra-petch': ['var(--font-chakra-petch)'],
+      },
+      fontSize: {
+        'body': ['18px', {
+          lineHeight: '26px',
+          letterSpacing: '0px',
+        }],
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        'body-text': 'var(--body-text-color)',
       },
     },
   },
-  plugins: [],
-} satisfies Config;
+} satisfies Config
+
+export default config
+
