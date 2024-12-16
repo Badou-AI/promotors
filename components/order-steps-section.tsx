@@ -29,7 +29,7 @@ export function OrderStepsSection() {
       <Container>
         <div className="grid lg:grid-cols-[1fr,2fr] gap-16">
           <div>
-            <h2 className="font-chakra-petch text-5xl font-bold text-white mb-6">
+            <h2 className="font-chakra-petch text-3xl font-bold text-white mb-6">
               PLACING AN ORDER
               <br />
               — STEP BY STEP

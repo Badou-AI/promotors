@@ -21,7 +21,7 @@ export function ProductDetails() {
         {[1, 2, 3, 4, 5].map((star) => (
           <Star
             key={star}
-            className="w-5 h-5 fill-[#FF4D07] text-[#FF4D07]"
+            className="w-5 h-5 fill-[#D16527] text-[#D16527]"
           />
         ))}
       </div>
@@ -50,7 +50,7 @@ export function ProductDetails() {
           </button>
         </div>
         <Button 
-          className="bg-[#FF4D07] hover:bg-[#FF4D07]/90 text-white px-8 py-6 rounded"
+          className="bg-[#D16527] hover:bg-[#D16527]/90 text-white px-8 py-6 rounded"
         >
           BUY NOW
         </Button>

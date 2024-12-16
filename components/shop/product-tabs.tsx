@@ -17,7 +17,7 @@ export function ProductTabs() {
             className={cn(
               "border-b-2 py-2 bg-transparent text-lg font-semibold transition-colors rounded-none",
               activeTab === tab.toLowerCase().replace(' ', '-')
-                ? "border-[#FF4D07] text-[#FF4D07] bg-transparent"
+                ? "border-[#D16527] text-[#D16527] bg-transparent"
                 : "border-transparent text-white/60 hover:text-white"
             )}
             variant="ghost"
@@ -102,7 +102,7 @@ function ReviewsTab() {
                   key={star}
                   className={cn(
                     "w-5 h-5",
-                    star <= review.rating ? "text-[#FF4D07]" : "text-white/20"
+                    star <= review.rating ? "text-[#D16527]" : "text-white/20"
                   )}
                   fill="currentColor"
                   viewBox="0 0 20 20"

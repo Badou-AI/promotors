@@ -47,7 +47,7 @@ const products: Product[] = [
 
 export function OtherProducts() {
   return (
-    <div className="py-16">
+    <div className="py-16 text-white">
       <h2 className="text-3xl md:text-4xl font-bold mb-8">OTHER PRODUCTS</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {products.map((product) => (
@@ -62,8 +62,8 @@ export function OtherProducts() {
                 style={{
                   backgroundImage: `repeating-linear-gradient(
                     45deg,
-                    #FF4D07,
-                    #FF4D07 10px,
+                    #D16527,
+                    #D16527 10px,
                     transparent 10px,
                     transparent 20px
                   )`,
@@ -71,7 +71,7 @@ export function OtherProducts() {
                 }}
               />
               {product.onSale && (
-                <div className="absolute top-4 left-4 z-20 bg-[#FF4D07] px-3 py-1 text-sm font-semibold">
+                <div className="absolute top-4 left-4 z-20 bg-[#D16527] px-3 py-1 text-sm font-semibold">
                   Sale
                 </div>
               )}
@@ -100,7 +100,7 @@ export function OtherProducts() {
                 </div>
                 <Button 
                   variant="ghost"
-                  className="bg-[#FF4D07] hover:bg-[#FF4D07]/90 text-white px-4 py-2 transform -skew-x-12"
+                  className="bg-[#D16527] hover:bg-[#D16527]/90 text-white px-4 py-2 transform -skew-x-12"
                 >
                   <span className="inline-block transform skew-x-12">
                     ADD TO CART

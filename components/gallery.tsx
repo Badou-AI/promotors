@@ -23,10 +23,10 @@ export function Gallery() {
   }
 
   return (
-    <section className="py-16">
+    <section className="bg-[#161616] py-20">
       <Container>
-        <div className="mb-8 flex items-center justify-between">
-          <h2 className="font-['Chakra_Petch'] text-3xl md:text-[42px] leading-none">
+        <div className="mb-12 flex items-center justify-between">
+          <h2 className="font-chakra-petch text-5xl font-bold text-white">
             OUR RECENT WORKS
           </h2>
           <div className="flex gap-2">
@@ -56,7 +56,7 @@ export function Gallery() {
               <div className="absolute inset-0 bg-black/50 opacity-0 transition-opacity group-hover:opacity-100" />
               <div className="absolute inset-x-0 top-0 h-[3px] bg-[#FD6527] opacity-0 transition-opacity group-hover:opacity-100" />
               <div className="absolute inset-x-0 top-0 p-4 opacity-0 transition-opacity group-hover:opacity-100">
-                <h3 className="font-['Chakra_Petch'] text-lg font-semibold text-white">
+                <h3 className="font-chakra-petch text-2xl font-semibold text-white">
                   {image.title}
                 </h3>
               </div>

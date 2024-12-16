@@ -1,13 +1,15 @@
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import { Container } from "@/components/ui/container"
 
 export function PromoSection() {
   return (
     <div className="bg-[#121212]">
+      <Container>
       <div className="container mx-auto px-4 py-12 lg:py-24">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
           <div className="max-w-xl">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
+            <h2 className="text-3xl text-white md:text-4xl font-bold tracking-tight mb-4">
               SPEND $150+ AND GET $20<br />
               BONUS CT MONEY
             </h2>
@@ -17,7 +19,7 @@ export function PromoSection() {
               viverra. Netus et malesuada fames ac turpis.
             </p>
             <Button 
-              className="bg-[#FF4D07] hover:bg-[#FF4D07]/90 text-white px-8 py-3 transform -skew-x-12"
+              className="bg-[#D16527] hover:bg-[#D16527]/90 text-white px-8 py-3 transform -skew-x-12"
             >
               <span className="inline-block transform skew-x-12">
                 GO TO SHOP
@@ -30,8 +32,8 @@ export function PromoSection() {
               style={{
                 backgroundImage: `repeating-linear-gradient(
                   45deg,
-                  #FF4D07,
-                  #FF4D07 10px,
+                  #D16527,
+                  #D16527 10px,
                   transparent 10px,
                   transparent 20px
                 )`,
@@ -47,6 +49,7 @@ export function PromoSection() {
           </div>
         </div>
       </div>
+      </Container>
     </div>
   )
 }

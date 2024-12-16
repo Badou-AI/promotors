@@ -1,6 +1,7 @@
 import { ProductCard } from "@/components/product-card"
 import { ShopSidebar } from "@/components/shop-sidebar"
 import { Pagination } from "@/components/pagination"
+import { Container } from "./ui/container"
 
 const products = [
   {
@@ -103,11 +104,11 @@ const products = [
 
 export function ShopGrid() {
   return (
-    <section className="py-6">
-      <div className="container">
+    <section className="py-12">
+      <Container>
         <div className="grid gap-8 lg:grid-cols-[1fr,320px]">
           <div>
-            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-x-8 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
               {products.map((product) => (
                 <ProductCard key={product.id} {...product} />
               ))}
@@ -120,7 +121,7 @@ export function ShopGrid() {
             <ShopSidebar />
           </aside>
         </div>
-      </div>
+      </Container>
     </section>
   )
 }

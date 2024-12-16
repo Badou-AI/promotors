@@ -13,6 +13,13 @@ interface SiteHeaderProps {
 export function SiteHeader({ hasNavBanner = false }: SiteHeaderProps) {
   const pathname = usePathname()
 
+  const isActive = (path: string) => {
+    if (path === '/') {
+      return pathname === '/'
+    }
+    return pathname.startsWith(path)
+  }
+
   return (
     <header className={`fixed top-0 z-50 w-full border-b border-[#343434] ${hasNavBanner ? 'bg-[#161616]' : 'bg-[#121212]'}`}>
       <Container>
@@ -29,37 +36,37 @@ export function SiteHeader({ hasNavBanner = false }: SiteHeaderProps) {
           <nav className="flex items-center space-x-8 font-['Chakra_Petch'] text-[15px] leading-none">
             <Link 
               href="/" 
-              className={`${pathname === '/' ? 'text-[#D16527] underline underline-offset-4' : 'text-white hover:text-[#D16527]'} transition-colors`}
+              className={`${isActive('/') ? 'text-[#D16527] underline underline-offset-4' : 'text-white hover:text-[#D16527]'} transition-colors`}
             >
               HOME
             </Link>
             <Link 
               href="/about" 
-              className={`${pathname === '/about' ? 'text-[#D16527] underline underline-offset-4' : 'text-white hover:text-[#D16527]'} transition-colors`}
+              className={`${isActive('/about') ? 'text-[#D16527] underline underline-offset-4' : 'text-white hover:text-[#D16527]'} transition-colors`}
             >
               ABOUT
             </Link>
             <Link 
               href="/services" 
-              className={`${pathname === '/services' ? 'text-[#D16527] underline underline-offset-4' : 'text-white hover:text-[#D16527]'} transition-colors`}
+              className={`${isActive('/services') ? 'text-[#D16527] underline underline-offset-4' : 'text-white hover:text-[#D16527]'} transition-colors`}
             >
               SERVICES
             </Link>
             <Link 
               href="/shop" 
-              className={`${pathname === '/shop' ? 'text-[#D16527] underline underline-offset-4' : 'text-white hover:text-[#D16527]'} transition-colors`}
+              className={`${isActive('/shop') ? 'text-[#D16527] underline underline-offset-4' : 'text-white hover:text-[#D16527]'} transition-colors`}
             >
               SHOP
             </Link>
             <Link 
               href="/blog" 
-              className={`${pathname === '/blog' ? 'text-[#D16527] underline underline-offset-4' : 'text-white hover:text-[#D16527]'} transition-colors`}
+              className={`${isActive('/blog') ? 'text-[#D16527] underline underline-offset-4' : 'text-white hover:text-[#D16527]'} transition-colors`}
             >
               BLOG
             </Link>
             <Link 
               href="/contacts" 
-              className={`${pathname === '/contacts' ? 'text-[#D16527] underline underline-offset-4' : 'text-white hover:text-[#D16527]'} transition-colors`}
+              className={`${isActive('/contacts') ? 'text-[#D16527] underline underline-offset-4' : 'text-white hover:text-[#D16527]'} transition-colors`}
             >
               CONTACTS
             </Link>

@@ -50,9 +50,9 @@ const teamMembers = [
 
 export function Team() {
   return (
-    <section className="py-16 md:py-24">
+    <section className="bg-[#161616] py-20">
       <Container>
-        <h2 className="mb-12 font-['Chakra_Petch'] text-3xl md:text-[42px] leading-none">
+        <h2 className="font-chakra-petch text-5xl font-bold text-white mb-12">
           EXPERT TEAM MEMBERS
         </h2>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -68,10 +68,10 @@ export function Team() {
               </div>
               <div className="absolute inset-x-0 bottom-0 translate-y-full transition-transform group-hover:translate-y-0">
                 <div className="bg-[#121212] p-6">
-                  <h3 className="font-['Chakra_Petch'] text-[23px] leading-8">
+                  <h3 className="font-chakra-petch text-2xl text-white">
                     {member.name}
                   </h3>
-                  <p className="font-['Mulish'] text-[#EDEDED]/80">
+                  <p className="text-[#EDEDED]/80">
                     {member.role}
                   </p>
                   <div className="mt-4 flex gap-4">

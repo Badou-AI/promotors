@@ -3,7 +3,7 @@ import { Container } from "@/components/ui/container"
 
 export function CTA() {
   return (
-    <section className="relative py-24">
+    <section className="relative py-20">
       <div className="absolute inset-0 bg-black/50">
         <img
           src="/placeholder.svg?height=600&width=1920"
@@ -14,15 +14,15 @@ export function CTA() {
       <Container>
         <div className="relative text-center">
           <div className="mx-auto max-w-2xl space-y-6">
-            <h2 className="font-['Chakra_Petch'] text-3xl md:text-[42px] leading-none">
+            <h2 className="font-chakra-petch text-5xl font-bold text-white">
               BOOK YOUR SERVICE TODAY
             </h2>
-            <p className="font-['Mulish'] text-lg leading-[26px] text-[#EDEDED]/80">
+            <p className="text-[#EDEDED]">
               Egestas integer eget aliquet nibh praesent tristique magna.
               Penatibus et magnis dis parturient montes nascetur ridiculus
             </p>
             <Button 
-              className="bg-[#FD6527] hover:bg-[#FD6527]/90 text-white rounded-none px-8 py-6 text-lg font-['Chakra_Petch']"
+              className="bg-[#FD6527] hover:bg-[#FD6527]/90 text-white rounded-none px-8 py-4 text-base font-chakra-petch"
             >
               BOOK SERVICE NOW
             </Button>
