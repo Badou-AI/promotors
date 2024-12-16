@@ -4,12 +4,12 @@ import { Container } from "@/components/ui/container"
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen bg-[#161616] pt-2">
+    <section className="relative min-h-fit bg-[#161616] pt-2">
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute inset-0 bg-[url('/promotors-bg.png')] bg-cover bg-center opacity-20" />
       </div>
       <Container>
-        <div className="relative flex flex-col lg:flex-row min-h-[calc(100vh-5rem)] items-center">
+        <div className="relative flex flex-col lg:flex-row min-h-[calc(100vh-22rem)] items-center">
           <div className="max-w-2xl space-y-6 lg:w-1/2">
             <h1 className="font-chakra-petch text-6xl font-bold leading-tight tracking-tight text-white">
               AUTO MAINTENANCE
