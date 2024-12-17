@@ -1,6 +1,5 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { cn } from "@/lib/utils"
 
 interface Product {
   id: string

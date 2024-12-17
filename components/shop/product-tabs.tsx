@@ -20,7 +20,6 @@ export function ProductTabs() {
                 ? "border-[#D16527] text-[#D16527] bg-transparent"
                 : "border-transparent text-white/60 hover:text-white"
             )}
-            variant="ghost"
           >
             {tab}
           </TabsTrigger>

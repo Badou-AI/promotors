@@ -1,5 +1,5 @@
 import { Container } from "@/components/ui/container"
-import Image from "next/image"
+//import Image from "next/image"
 
 const brands = [
   { name: "Brand 1", logo: "/brands/brand1.svg" },

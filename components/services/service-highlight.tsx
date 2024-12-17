@@ -10,7 +10,7 @@ export function ServiceHighlight() {
             WHEEL ALIGNMENT AND SUSPENSION REPAIR
           </h2>
           <p className="text-zinc-400 mb-8">
-            Expert auto service to keep your car in top condition. Our certified technicians use state-of-the-art equipment to ensure your vehicle's alignment and suspension systems are functioning optimally.
+            Expert auto service to keep your car in top condition. Our certified technicians use state-of-the-art equipment to ensure your vehicle&apos;s alignment and suspension systems are functioning optimally.
           </p>
           <Button>GET SERVICE</Button>
         </div>

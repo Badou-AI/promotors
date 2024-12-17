@@ -3,6 +3,7 @@
 import { useRef } from "react"
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { Container } from "@/components/ui/container"
+import Image from "next/image"
 
 const images = [
   { src: "/propics/1-car-repair.jpg", title: "Car Repair Service" },
@@ -61,10 +62,12 @@ export function Gallery() {
                   {image.title}
                 </h3>
               </div>
-              <img
+              <Image
                 src={image.src}
                 alt={`Gallery image ${index + 1}`}
                 className="h-[400px] w-[300px] object-cover"
+                width={300}
+                height={400}
               />
             </div>
           ))}
