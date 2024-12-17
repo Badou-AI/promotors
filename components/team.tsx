@@ -1,11 +1,11 @@
 import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react'
 import { Container } from "@/components/ui/container"
-
+import Image from "next/image"
 const teamMembers = [
   {
-    name: "John Smith",
+    name: "Omar 'Chief' Diop",
     role: "Master Technician",
-    image: "/placeholder.svg",
+    image: "/crew/1-chief.jpg",
     socials: {
       facebook: "#",
       twitter: "#",
@@ -14,9 +14,9 @@ const teamMembers = [
     }
   },
   {
-    name: "Sarah Johnson",
+    name: "Anna 'Tata' Diop",
     role: "Service Advisor",
-    image: "/placeholder.svg",
+    image: "/crew/4-tata.jpg",
     socials: {
       facebook: "#",
       twitter: "#",
@@ -25,9 +25,9 @@ const teamMembers = [
     }
   },
   {
-    name: "Mike Wilson",
-    role: "Diagnostic Specialist",
-    image: "/placeholder.svg",
+    name: "Abdoulaye 'Baba' Seck",
+    role: "Head Mechanic",
+    image: "/crew/2-baba.jpg",
     socials: {
       facebook: "#",
       twitter: "#",
@@ -36,9 +36,53 @@ const teamMembers = [
     }
   },
   {
-    name: "Emily Brown",
-    role: "Parts Manager",
-    image: "/placeholder.svg",
+    name: "Myriam 'Goldfingers' Faye",
+    role: "Detailing Specialist",
+    image: "/crew/3-myriam.jpg",
+    socials: {
+      facebook: "#",
+      twitter: "#",
+      instagram: "#",
+      linkedin: "#"
+    }
+  },
+  {
+    name: "Hassan 'Ying' Sy",
+    role: "Tire & Alignment Expert",
+    image: "/crew/5-hassan-ying.jpg",
+    socials: {
+      facebook: "#",
+      twitter: "#",
+      instagram: "#",
+      linkedin: "#"
+    }
+  },
+  {
+    name: "David 'Handy' Diatta",
+    role: "Bodywork Specialist",
+    image: "/crew/6-david-handy.jpg",
+    socials: {
+      facebook: "#",
+      twitter: "#",
+      instagram: "#",
+      linkedin: "#"
+    }
+  },
+  {
+    name: "Hussein 'Yang' Sy",
+    role: "Electrical & Engine Specialist",
+    image: "/crew/7-hussein-yang.jpg",
+    socials: {
+      facebook: "#",
+      twitter: "#",
+      instagram: "#",
+      linkedin: "#"
+    }
+  },
+  {
+    name: "Malik 'Rook' Ba",
+    role: "Apprentice Mechanic",
+    image: "/crew/8-malik-rook.jpg",
     socials: {
       facebook: "#",
       twitter: "#",
@@ -59,10 +103,13 @@ export function Team() {
           {teamMembers.map((member, index) => (
             <div key={index} className="group relative h-[600px] overflow-hidden">
               <div className="absolute inset-0">
-                <img
+                <Image
                   src={member.image}
                   alt={member.name}
+                  width={400}
+                  height={600}
                   className="h-full w-full object-cover"
+                  objectFit="cover"
                 />
                 <div className="absolute inset-0 bg-black/50 opacity-0 transition-opacity group-hover:opacity-100" />
               </div>

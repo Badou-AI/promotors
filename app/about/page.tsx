@@ -1,5 +1,5 @@
 import { Benefits } from "@/components/benefits"
-import { Services } from "@/components/services"
+import { ServicesGrid } from "@/components/shared/services-grid"
 import { Gallery } from "@/components/gallery"
 import { Steps } from "@/components/steps"
 import { Team } from "@/components/team"
@@ -17,7 +17,7 @@ export default function AboutPage() {
       <AnimationWrapper>
         <main className="min-h-screen bg-[#161616] text-[#EDEDED]">
           <Benefits />
-          <Services />
+          <ServicesGrid variant="full" showDetailsLink={false} />
           <Gallery />
           <Steps />
           <Team />

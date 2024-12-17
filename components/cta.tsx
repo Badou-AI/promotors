@@ -1,14 +1,16 @@
 import { Button } from "@/components/ui/button"
 import { Container } from "@/components/ui/container"
-
+import Image from "next/image"
 export function CTA() {
   return (
     <section className="relative py-20">
-      <div className="absolute inset-0 bg-black/50">
-        <img
-          src="/placeholder.svg?height=600&width=1920"
+      <div className="absolute inset-0 bg-black/80">
+        <Image
+          src="/pro-services-banner.jpg"
           alt="Background"
           className="h-full w-full object-cover opacity-50"
+          width={1920}
+          height={600}
         />
       </div>
       <Container>

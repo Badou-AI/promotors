@@ -5,11 +5,12 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { Container } from "@/components/ui/container"
 
 const images = [
-  { src: "/placeholder.svg", title: "Car Repair Service" },
-  { src: "/placeholder.svg", title: "Engine Diagnostics" },
-  { src: "/placeholder.svg", title: "Brake Service" },
-  { src: "/placeholder.svg", title: "Tire Replacement" },
-  { src: "/placeholder.svg", title: "Oil Change" },
+  { src: "/propics/1-car-repair.jpg", title: "Car Repair Service" },
+  { src: "/propics/3-engine-diagnostic.jpg", title: "Engine Diagnostics" },
+  { src: "/propics/4-brake-repair.jpg", title: "Brake Service" },
+  { src: "/propics/5-tire-repair.jpg", title: "Tire Replacement" },
+  { src: "/propics/2-engine-oil-change.jpg", title: "Oil Change" },
+  { src: "/propics/6-car-detailing.jpg", title: "Car Detailing" },
 ]
 
 export function Gallery() {

@@ -63,9 +63,9 @@ export function Benefits() {
             </div>
           </div>
           <div className="relative aspect-square w-full">
-            <div className="absolute inset-0 bg-black/50" />
+            {/* <div className="absolute inset-0 bg-black/50" /> */}
             <Image
-              src="/placeholder.svg"
+              src="/propics/pro-tire-repair.jpg"
               alt="Auto repair facility"
               className="h-full w-full object-cover"
               width={600}
